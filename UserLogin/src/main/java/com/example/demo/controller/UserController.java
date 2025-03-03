@@ -17,9 +17,9 @@ public class UserController {
     
     @PostMapping(path="/createuser")
     public UserInfo createUser(@RequestBody UserInfo userInfo) {
-        if (userInfo.getUserName() == null || userInfo.getPassword() == null) {
-            throw new IllegalArgumentException("Username and password cannot be null");
-        }
+//        if (userInfo.getUserName() == null || userInfo.getPassword() == null) {
+//            throw new IllegalArgumentException("Username and password cannot be null");
+//        }
         return dao.createUser(userInfo);
     }
 

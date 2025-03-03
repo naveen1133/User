@@ -16,6 +16,18 @@ public class UserInfo {
     
     @Column(name = "password", nullable = false)
     private String password;
+    
+    @Column(name = "email", nullable = false)
+    private String email;
+    
+    public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 
     public Long getId() {
         return id;
